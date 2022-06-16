@@ -14,34 +14,6 @@ function Header(props) {
         </div>
         <div className="header-nav">
           <Nav />
-          {/* <div>
-            <p>About</p>
-            <ul>
-              <li>Test</li>
-              <li>Test</li>
-              <li>Test</li>
-              <li>Test</li>
-            </ul>
-          </div>
-          <div>
-            <p>Service</p>
-            <ul>
-              <li>Test</li>
-              <li>Test</li>
-              <li>Test</li>
-              <li>Test</li>
-            </ul>
-          </div>
-          <div>
-            <p>New</p>
-          </div>
-          <div>
-            <p>Employment </p>
-          </div>
-          <div>
-            <i className="fa-solid fa-envelope"></i>
-            <p>Inquiry</p>
-          </div> */}
         </div>
       </div>
     </div>
