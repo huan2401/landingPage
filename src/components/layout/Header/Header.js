@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../../../assets/logo.jpg";
 import "./Header.scss";
 
 function Header(props) {
@@ -7,8 +8,8 @@ function Header(props) {
       <div className="header-wrapper">
         <div className="header-logo">
           <img
-            src="https://www.yellspec.co.jp/wp-content/themes/yellspec/img/common/logo_text.png"
-            alt="#"
+            src={Logo}
+            alt="logo"
           />
         </div>
         <nav className="header-nav">
