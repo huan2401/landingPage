@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.scss";
-import Nav from "../Nav/Nav.jsx";
 
 function Header(props) {
   return (
@@ -12,9 +11,15 @@ function Header(props) {
             alt="#"
           />
         </div>
-        <div className="header-nav">
-          <Nav />
-        </div>
+        <nav className="header-nav">
+          <a href="#section1">事業内容</a>
+          <a href="#section2">会社概要</a>
+          <a href="#section3">アクセス</a>
+          <a href="#">
+            <i class="fa-solid fa-envelope"></i>
+            <span>お問い合わせ</span>
+          </a>
+        </nav>
       </div>
     </div>
   );
