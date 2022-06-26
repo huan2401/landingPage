@@ -421,18 +421,76 @@
 
   section#section1 {
     width: 100%;
+    margin-top: 30px;
     & > div.section1-wrapper {
       width: 1200px;
-      margin: auto;      
+      margin: auto;
+
+      & > div:first-child {
+        width: 100%;
+
+        & > p:first-child {
+          font-size: 30px;
+          font-weight: bold;
+          width: 100%;
+          text-align: center;
+        }
+
+        & > p:nth-child(2) {
+          font-size: 20px;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+        }
+
+        & > p:last-child {
+          font-size: 20px;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+        }
+      }
+
+      & > div:nth-child(2) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        & > img {
+          width: 690px;
+          height: 290px;
+        }
+      }
+
+      & > div:nth-child(3) {
+        margin-top: 30px;
+        & > p:first-child {
+          width: 100%;
+          font-size: 20px;
+        }
+
+        & > p:nth-child(2) {
+          width: 100%;
+          font-size: 20px;
+          margin-top: 20px;
+        }
+
+        & > p:nth-child(3) {
+          width: 100%;
+          font-size: 20px;
+          margin-top: 20px;
+        }
+      }
     }
   }
 
   section#section2 {
     width: 100%;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     & > div.section2-wrapper {
       width: 1200px;
-      margin: auto;      
+      margin: auto;
     }
   }
 
@@ -440,12 +498,9 @@
     width: 100%;
     & > div.section3-wrapper {
       width: 1200px;
-      margin: auto;      
+      margin: auto;
     }
   }
-
-
-
 
   .scrollTop {
     width: 50px;
