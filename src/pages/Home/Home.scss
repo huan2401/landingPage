@@ -482,6 +482,12 @@
           margin-top: 20px;
         }
       }
+
+      & > div:last-child {
+        & > p:first-child {
+          
+        }
+      }
     }
   }
 
