@@ -16,16 +16,38 @@ function Header(props) {
         </label>
         <input type="checkbox" id="toggleNav" />
         <nav className="header-nav">
-          <a href="#section1" onClick={() => history.push("/")}>
+          <a
+            href="#section1"
+            onClick={() => {
+              document.getElementById("toggleNav").click();
+              history.push("/");
+            }}
+          >
             事業内容
           </a>
-          <a href="#section2" onClick={() => history.push("/")}>
+          <a
+            href="#section2"
+            onClick={() => {
+              document.getElementById("toggleNav").click();
+              history.push("/");
+            }}
+          >
             会社概要
           </a>
-          <a href="#section3" onClick={() => history.push("/")}>
+          <a
+            href="#section3"
+            onClick={() => {
+              document.getElementById("toggleNav").click();
+              history.push("/");
+            }}
+          >
             アクセス
           </a>
-          <Link to="/contact" href="#">
+          <Link
+            to="/contact"
+            href="#"
+            onClick={() => document.getElementById("toggleNav").click()}
+          >
             <i class="fa-solid fa-envelope"></i>
             <span>お問い合わせ</span>
           </Link>

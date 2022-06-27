@@ -4,9 +4,11 @@
   &-banner {
     @media screen and (max-width: 768px) {
       width: 100%;
-      padding: 0 20px;
       background-size: auto 400px;
-      height: 400px;
+      padding: 0;
+      background-size: auto 400px;
+      height: 200px;
+      background-size: cover;
     }
 
     width: 1200px;
@@ -22,6 +24,11 @@
     &>div.section1-wrapper {
       width: 1200px;
       margin: auto;
+      @media screen and (max-width: 960px) {
+        width: 100%;
+        padding: 20px 20px;
+        box-sizing: border-box;
+      }
 
       &>div:first-child {
         width: 100%;
@@ -58,6 +65,11 @@
         &>img {
           width: 690px;
           height: 290px;
+
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            height: auto
+          }
         }
       }
 
@@ -146,6 +158,11 @@
       width: 1200px;
       margin: auto;
       padding: 30px 0;
+      @media screen and (max-width: 960px) {
+        width: 100%;
+        padding: 20px 20px;
+        box-sizing: border-box;
+      }
 
       & > p {
         width: 100%;
@@ -173,6 +190,11 @@
       width: 1200px;
       margin: auto;
       padding: 30px 0;
+      @media screen and (max-width: 960px) {
+        width: 100%;
+        padding: 20px 20px;
+        box-sizing: border-box;
+      }
 
       & > p {
         width: 100%;
