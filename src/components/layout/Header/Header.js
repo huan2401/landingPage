@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../../../assets/logo.jpg";
 import "./Header.scss";
 import { Link, useHistory } from "react-router-dom";
@@ -8,7 +8,13 @@ function Header(props) {
   return (
     <div className="header" style={props.style}>
       <div className="header-wrapper">
-        <Link to="/" className="header-logo">
+        <Link
+          to="/"
+          className="header-logo"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
           <img src={Logo} alt="logo" />
         </Link>
         <label className="nav-responsive" htmlFor="toggleNav">

@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from "react";
-import Header from "../../components/layout/Header/Header";
-import Footer from "../../components/layout/Footer/Footer";
 import ImageSection1 from "../../assets/image-section-14.png";
 import "./Home.scss";
+import GoogleMapReact from "google-map-react";
 
 function Home() {
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+  const AnyReactComponent = ({ text }) => <div>{text}</div>;
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627,
+    },
+    zoom: 11,
+  };
   return (
     <div className="home">
       <div className="home-banner"></div>
@@ -13,7 +22,7 @@ function Home() {
         <div className="section1-wrapper">
           <div>
             <p>事業内容</p>
-            <p>TH・Familyでは　人、企業を繋ぎ</p>
+            <p>TH・Familyでは 人、企業を繋ぎ</p>
             <p>人が活きる社会を創り出す 様々なサービスに取り組んでいます。</p>
           </div>
           <div>
@@ -137,6 +146,23 @@ function Home() {
               <td>ハノイ市ロンビエン区１２番１４４コリン</td>
             </tr>
           </table>
+        </div>
+      </section>
+      <section id="section4">
+        <div className="section4-wrapper">
+          <div className="google-map">
+            <GoogleMapReact
+              bootstrapURLKeys={{ key: "" }}
+              defaultCenter={defaultProps.center}
+              defaultZoom={defaultProps.zoom}
+            >
+              <AnyReactComponent
+                lat={59.955413}
+                lng={30.337844}
+                text="My Marker"
+              />
+            </GoogleMapReact>
+          </div>
         </div>
       </section>
     </div>

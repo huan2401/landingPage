@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-
+  margin-top: 70px;
   &-banner {
     @media screen and (max-width: 768px) {
       width: 100%;
@@ -20,8 +20,9 @@
   section#section1 {
     width: 100%;
     margin: 30px 0;
+    padding-top: 100px;
 
-    &>div.section1-wrapper {
+    & > div.section1-wrapper {
       width: 1200px;
       margin: auto;
       @media screen and (max-width: 960px) {
@@ -30,24 +31,24 @@
         box-sizing: border-box;
       }
 
-      &>div:first-child {
+      & > div:first-child {
         width: 100%;
 
-        &>p:first-child {
+        & > p:first-child {
           font-size: 30px;
           font-weight: bold;
           width: 100%;
           text-align: center;
         }
 
-        &>p:nth-child(2) {
+        & > p:nth-child(2) {
           font-size: 20px;
           width: 100%;
           text-align: center;
           margin-top: 30px;
         }
 
-        &>p:last-child {
+        & > p:last-child {
           font-size: 20px;
           width: 100%;
           text-align: center;
@@ -55,59 +56,59 @@
         }
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 50px;
 
-        &>img {
+        & > img {
           width: 690px;
           height: 290px;
 
           @media screen and (max-width: 768px) {
             width: 100%;
-            height: auto
+            height: auto;
           }
         }
       }
 
-      &>div:nth-child(3) {
+      & > div:nth-child(3) {
         margin-top: 30px;
 
-        &>p:first-child {
+        & > p:first-child {
           width: 100%;
           font-size: 20px;
         }
 
-        &>p:nth-child(2) {
+        & > p:nth-child(2) {
           width: 100%;
           font-size: 20px;
           margin-top: 20px;
         }
 
-        &>p:nth-child(3) {
+        & > p:nth-child(3) {
           width: 100%;
           font-size: 20px;
           margin-top: 20px;
         }
       }
 
-      &>div:last-child {
+      & > div:last-child {
         margin-top: 30px;
 
-        &>p:first-child {
+        & > p:first-child {
           font-size: 20px;
           font-weight: bold;
         }
 
-        &>p:nth-child(2) {
+        & > p:nth-child(2) {
           font-size: 20px;
           margin-top: 20px;
         }
 
-        &>p:nth-child(3) {
+        & > p:nth-child(3) {
           width: 100%;
           display: flex;
           align-items: center;
@@ -115,19 +116,19 @@
           flex-direction: column;
           margin-top: 30px;
 
-          &>span:first-child {
+          & > span:first-child {
             font-size: 26px;
             font-weight: bold;
             color: rgb(144, 140, 4);
           }
 
-          &>span:last-child {
+          & > span:last-child {
             font-size: 20px;
             margin-top: 20px;
           }
         }
 
-        &>p:last-child {
+        & > p:last-child {
           width: 100%;
           display: flex;
           align-items: center;
@@ -135,13 +136,13 @@
           flex-direction: column;
           margin-top: 30px;
 
-          &>span:first-child {
+          & > span:first-child {
             font-size: 26px;
             font-weight: bold;
             color: rgb(144, 140, 4);
           }
 
-          &>span:last-child {
+          & > span:last-child {
             font-size: 20px;
             margin-top: 20px;
           }
@@ -153,8 +154,9 @@
   section#section2 {
     width: 100%;
     background-color: #f8f8f8;
+    padding-top: 100px;
 
-    &>div.section2-wrapper {
+    & > div.section2-wrapper {
       width: 1200px;
       margin: auto;
       padding: 30px 0;
@@ -185,8 +187,9 @@
 
   section#section3 {
     width: 100%;
+    padding-top: 100px;
 
-    &>div.section3-wrapper {
+    & > div.section3-wrapper {
       width: 1200px;
       margin: auto;
       padding: 30px 0;
@@ -211,6 +214,25 @@
             padding: 20px 0;
           }
         }
+      }
+    }
+  }
+
+  section#section4 {
+    width: 100%;
+    & > div.section4-wrapper {
+      width: 1200px;
+      margin: auto;
+      padding: 30px 0;
+      @media screen and (max-width: 960px) {
+        width: 100%;
+        padding: 20px 20px;
+        box-sizing: border-box;
+      }
+
+      & > .google-map {
+        width: 100%;
+        height: 400px;
       }
     }
   }

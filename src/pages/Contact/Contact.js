@@ -9,21 +9,7 @@ const Contact = () => {
   return (
     <section className="contact">
       <div className="contact-wrapper">
-        <div className="contact-step">
-          <div>
-            <p
-              onClick={() => setActiveStep(1)}
-              className={activeStep === 1 ? "active" : ""}
-            >
-              Step 1
-            </p>
-            <p
-              onClick={() => setActiveStep(2)}
-              className={activeStep === 2 ? "active" : ""}
-            >
-              Step 2
-            </p>
-          </div>
+        <div className="contact-header">
           <p>
             当社への問い合わせは、こちらからお願いいたします。
             後日、弊社より折り返しご連絡いたします。
