@@ -1,0 +1,135 @@
+section.contact {
+  width: 100%;
+  margin: 30px 0;
+  div.contact-wrapper {
+    width: 1200px;
+    margin: auto;
+
+    & > div.contact-step {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      & > div {
+        width: 200px;
+        height: 40px;
+        border-radius: 4px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        background-color: #e4e4e4;
+
+        & > p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          text-transform: uppercase;
+          height: 100%;
+          width: 100%;
+          &:hover {
+            color: #fff;
+            background-color: #d22867;
+          }
+
+          &.active {
+            color: #fff;
+            background-color: #d22867;
+          }
+        }
+      }
+
+      & > p {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+    }
+
+    & > div.contact-form {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      & > table {
+        width: 80%;
+        border-collapse: collapse;
+        & > tbody {
+          & > tr:last-child {
+            & > th {
+              border: none;
+            }
+          }
+          & > tr:first-child {
+            & > th {
+              & > span:first-child {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                top: 50%;
+              }
+            }
+          }
+          & > tr {
+            height: 100%;
+            & > th {
+              width: 30%;
+              background-color: #f8f8f8;
+              padding: 20px;
+              border-bottom: 1px solid #e4e4e4;
+              position: relative;
+              & > span:first-child {
+                word-break: keep-all;
+              }
+              & > span.label {
+                font-size: 10px;
+                padding: 4px;
+                color: #d22867;
+                border: 1px solid #d22867;
+                white-space: nowrap;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+
+                // margin-left: 30px;
+              }
+            }
+            & > td {
+              height: 100%;
+              padding: 20px;
+              & > input,
+              textarea {
+                height: 100%;
+                width: 50%;
+                border: 1px solid #dddede;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & > div.contact-submit {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      & > div {
+        width: 200px;
+        padding: 10px 20px;
+        background-color: #d22867;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        & > span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
