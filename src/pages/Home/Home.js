@@ -1,20 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import ImageSection1 from "../../assets/image-section-14.png";
 import "./Home.scss";
-import GoogleMapReact from "google-map-react";
 
 function Home() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
-  const AnyReactComponent = ({ text }) => <div>{text}</div>;
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627,
-    },
-    zoom: 11,
-  };
   return (
     <div className="home">
       <div className="home-banner"></div>
@@ -151,17 +142,16 @@ function Home() {
       <section id="section4">
         <div className="section4-wrapper">
           <div className="google-map">
-            <GoogleMapReact
-              bootstrapURLKeys={{ key: "" }}
-              defaultCenter={defaultProps.center}
-              defaultZoom={defaultProps.zoom}
-            >
-              <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
-                text="My Marker"
-              />
-            </GoogleMapReact>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.9739201775564!2d139.77450142924405!3d35.70418464876178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ea0dc6512f1%3A0x83499ad986e8dd4c!2z5YWs5b6z5aCC44OT44Or!5e0!3m2!1sen!2s!4v1656325578124!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allowFullScreen=""
+              aria-hidden="false"
+              tabIndex="0"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </section>
